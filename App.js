@@ -1,14 +1,19 @@
 import React from 'react';
-import {SafeAreaView, StatusBar, Text, View} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {ListScreen} from './screens/listScreen';
+import {HomeScreen} from './screens/homeScreen';
+
+const Tab = createBottomTabNavigator();
 
 const App = () => {
     return (
-        <SafeAreaView>
-            <StatusBar />
-            <View>
-                <Text>React Native App</Text>
-            </View>
-        </SafeAreaView>
+        <NavigationContainer>
+            <Tab.Navigator>
+                <Tab.Screen name="Home" component={HomeScreen} />
+                <Tab.Screen name="List" component={ListScreen} />
+            </Tab.Navigator>
+        </NavigationContainer>
     );
 };
 
