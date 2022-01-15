@@ -10,7 +10,6 @@ export function ListComponent() {
     const Countries = useMemo(
         () =>
             codes.map(country => {
-                console.log(country.name);
                 return (
                     <TouchableOpacity key={country.alpha} style={{flexDirection: 'row'}}>
                         <Image source={images[country.name]}></Image>

@@ -26,13 +26,9 @@ const images = {
     Bermuda: require('./Bermuda.png'),
     Bhutan: require('./Bhutan.png'),
     'Bolivia (Plurinational State of)': require('./Bolivia.png'),
+    'Bonaire, Sint Eustatius and Saba': require('./Netherlands-Antilles.png'),
     /*
  
-    {
-        "name": "Bonaire, Sint Eustatius and Saba",
-
-    },
-    {
         "name": "Bosnia and Herzegovina",
 
     },
