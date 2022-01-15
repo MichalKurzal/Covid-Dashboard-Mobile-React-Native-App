@@ -1,4 +1,5 @@
 {
-  "name": "CovidReactN",
-  "displayName": "CovidReactN"
+    "name": "CovidReactN",
+    "displayName": "CovidReactN",
+    "userInterfaceStyle": "automatic"
 }
