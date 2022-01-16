@@ -1,11 +1,12 @@
-import React, {useEffect, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import {useTheme} from '@react-navigation/native';
 import getWorldwideData from '../api/getWorldwideData';
+import AppContext from '../api/context';
 
 export function Dashboard() {
     const {colors} = useTheme();
-
+    const {refreshing} = useContext(AppContext);
     const [cases, setCases] = useState(0);
     const [deaths, setDeaths] = useState(0);
     const [recovered, setRecovered] = useState(0);
@@ -27,6 +28,12 @@ export function Dashboard() {
     });
 
     useEffect(() => {
+        if(!refreshing)
+        fetchData();
+    }, [refreshing]);
+
+    const fetchData = () => {
+        console.log('fetching data');
         getWorldwideData().then(res => {
             setCases(res['cases']);
             setDeaths(res['deaths']);
@@ -35,7 +42,7 @@ export function Dashboard() {
             setTodayDeaths(res['todayDeaths']);
             setTodayRecovered(res['todayRecovered']);
         });
-    }, []);
+    }
 
     return (
         <View style={{flex: 0.2, justifyContent: 'space-between'}}>

@@ -29,22 +29,10 @@ const images = {
     'Bonaire, Sint Eustatius and Saba': require('./Netherlands-Antilles.png'),
     'Bosnia and Herzegovina': require('./Bosnia-and-Herzegovina.png'),
     Botswana: require('./Botswana.png'),
+    Brazil: require('./Brazil.png'),
+    'Brunei Darussalam': require('./Brunei.png'),
+
     /*
-
-    },
-    {
-        "name": "Brazil",
-
-    },
-    {
-        "name": "British Indian Ocean Territory",
-
-    },
-    {
-        "name": "Brunei Darussalam",
-
-    },
-    {
         "name": "Bulgaria",
     
     },
