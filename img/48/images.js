@@ -27,17 +27,9 @@ const images = {
     Bhutan: require('./Bhutan.png'),
     'Bolivia (Plurinational State of)': require('./Bolivia.png'),
     'Bonaire, Sint Eustatius and Saba': require('./Netherlands-Antilles.png'),
+    'Bosnia and Herzegovina': require('./Bosnia-and-Herzegovina.png'),
+    Botswana: require('./Botswana.png'),
     /*
- 
-        "name": "Bosnia and Herzegovina",
-
-    },
-    {
-        "name": "Botswana",
-
-    },
-    {
-        "name": "Bouvet Island",
 
     },
     {

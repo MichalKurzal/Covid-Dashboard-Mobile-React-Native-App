@@ -1,5 +1,5 @@
 import React, {useMemo} from 'react';
-import {ScrollView, Text, View, Image, TouchableOpacity} from 'react-native';
+import {ScrollView, Text,  Image, TouchableOpacity} from 'react-native';
 import {useTheme} from '@react-navigation/native';
 import images from '../img/48/images';
 var codes = require('../codes.json');
@@ -11,9 +11,13 @@ export function ListComponent() {
         () =>
             codes.map(country => {
                 return (
-                    <TouchableOpacity key={country.alpha} style={{flexDirection: 'row'}}>
+                    <TouchableOpacity
+                        key={country.alpha}
+                        style={{flexDirection: 'row', justifyContent: 'space-between'}}>
                         <Image source={images[country.name]}></Image>
-                        <Text style={{color: colors.text}}>{country.name}</Text>
+                        <Text style={{color: colors.text, textAlignVertical: 'center'}}>
+                            {country.name}
+                        </Text>
                     </TouchableOpacity>
                 );
             }),
