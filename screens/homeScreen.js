@@ -2,6 +2,7 @@ import React, {useContext} from 'react';
 import {ScrollView, RefreshControl} from 'react-native';
 import AppContext from '../api/context';
 import {Dashboard} from '../componets/dashboard';
+import HistoricalData from '../componets/historicalData';
 
 const wait = timeout => {
     return new Promise(resolve => setTimeout(resolve, timeout));
@@ -19,6 +20,7 @@ export function HomeScreen() {
         <ScrollView
             refreshControl={<RefreshControl refreshing={refreshing} onRefresh={onRefresh} />}>
             <Dashboard />
+            <HistoricalData/>
         </ScrollView>
     );
 }
