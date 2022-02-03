@@ -1,5 +1,4 @@
 import React, {useContext} from 'react';
-import {TopTab} from '../componets/topTab';
 import {ListScreen} from '../screens/listScreen';
 import {HomeScreen} from '../screens/homeScreen';
 import Icon from 'react-native-vector-icons/Feather';
@@ -14,7 +13,6 @@ const NavCointainer = () => {
 
     return (
         <NavigationContainer theme={isDark ? DarkTheme : DefaultTheme}>
-            <TopTab />
             <Tab.Navigator
                 screenOptions={({route}) => ({
                     tabBarIcon: ({color, size}) => {

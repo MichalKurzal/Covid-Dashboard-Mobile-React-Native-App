@@ -7,6 +7,7 @@ import AppContext from '../api/context';
 export const TopTab = () => {
     const {colors} = useTheme();
     const {isDark, setIsDark} = useContext(AppContext);
+    const iconTheme = isDark ? 'moon' : 'sun';
     const switchTheme = () => {
         setIsDark(!isDark);
     };
@@ -15,7 +16,7 @@ export const TopTab = () => {
             <TouchableOpacity
                 onPress={() => switchTheme()}
                 style={{backgroundColor: colors.background, alignItems: 'center'}}>
-                <Icon name="moon" color={colors.text} size={32} />
+                <Icon name={iconTheme} color={colors.text} size={32} />
             </TouchableOpacity>
         </View>
     );
