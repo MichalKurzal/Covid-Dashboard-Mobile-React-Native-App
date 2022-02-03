@@ -33,9 +33,8 @@ const images = {
     'Brunei Darussalam': require('./Brunei.png'),
     Bulgaria: require('./Bulgaria.png'),
     'Burkina Faso': require('./Burkina-Faso.png'),
+    Burundi: require('./Burundi.png'),
     /*
-        "name": "Burundi",
-
         "name": "Cabo Verde",
 
         "name": "Cambodia",
